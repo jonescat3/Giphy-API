@@ -1,7 +1,21 @@
-<<<<<<< HEAD
-# Giphy-API
-=======
-# Giphy-API
+Giphy api
+
+home screen with multiple buttons of a particular subject.
+
+click a button and it pulls from the giphy api file and display about 10 or so images of the same subject matter
+
+hover over the image for movement of the picture, when taking the the arrow away it stops the picture
+
+have a area open to typing in any image to add to the list. for exp; Add an animal ____dog___
+
+start adding the subject matter by  using an array 
+
+loop over them to make buttons and when i click on each one, i link the to the giphy api with the value of the button
+
+this will bring down 10 images of the subject
+
+
+DIRECTIONS BELOW
 # GifTastic
 
 ### Overview
@@ -103,4 +117,3 @@ After completing the homework please add the piece to your portfolio. Make sure 
 If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
 
 **Good Luck!**
->>>>>>> changes
