@@ -90,7 +90,8 @@
         animalView.empty();
         // code goes here
 
-        for (var i = 0; i < results.length; i++) {
+        for (var i = 0; i < animal.length; i++) {
+            console.log(animal)
 
             var gifDiv = $("<div class='item'>");
         
@@ -98,24 +99,24 @@
             // Adding a class of movie to our button
             a.addClass("animal");
             // Adding a data-attribute
-            a.attr("data-name", animal[i]);
+            a.attr("data-name", animals[i]);
             // Providing the initial button text
-            a.text(animals[i]);
+            a.text(animal[i]);
             // Adding the button to the buttons-view div
             $("#buttons-view").append(a);
 
         }
             
 
-        var rating = results[i].rating;
+        // var rating = animals[i].rating;
         
-        var p = $("<p>").text("Rating: " + rating);
+        // var p = $("<p>").text("Rating: " + rating);
         
-        var personImage = $("<img>");
-        animalImage.attr("src", results[i].images.fixed_height.url);
+        var animalImage = $("<img>");
+        animalImage.attr("src", animal[i].images.fixed_height.url);
         
         gifDiv.prepend(p);
-        gifDiv.prepend(animalsImage);
+        gifDiv.prepend(animalImage);
         
         $("#gifs-appear-here").prepend(gifDiv);
 
@@ -133,7 +134,7 @@
     
         });
 
-        $(document).on("click", ".animal", displayMovieInfo);
+        $(document).on("click", ".animal", displayAnimalInfo);
 
         //Calling the renderButtons function to display the initial list of animals
         renderButtons();
