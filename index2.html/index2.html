@@ -20,7 +20,7 @@
             var x = $(this).data("search");
             console.log(x);
 
-            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=uNbRs2v9pOXzCNRm75DDDxUhJ2RjIzcs=10"; 
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=uNbRs2v9pOXzCNRm75DDDxUhJ2RjIzcs&limit=10"; 
             console.log(queryURL);
 
          $.ajax({url:queryURL, method: "GET"})
